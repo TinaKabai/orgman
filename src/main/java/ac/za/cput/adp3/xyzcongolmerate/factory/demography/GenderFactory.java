@@ -5,11 +5,12 @@ import ac.za.cput.adp3.xyzcongolmerate.util.Helper;
 
 public class GenderFactory {
 
-    private static final String SUFFIX = Helper.getSuffixFromClassName(GenderFactory.class); // Expecting GF from (G)ender(F)actory.
+    private static final String SUFFIX = Helper.getSuffixFromClassName(GenderFactory.class);
 
-    //TODO: implement method body ONLY!
+
     public static Gender buildGender(String genderDescription) {
-        throw new UnsupportedOperationException("Not yet supported!");
+
+        return new Gender.Builder().genderDescription(genderDescription).build();
         /**
          * Your implementation goes here
          * INSTRUCTIONS
