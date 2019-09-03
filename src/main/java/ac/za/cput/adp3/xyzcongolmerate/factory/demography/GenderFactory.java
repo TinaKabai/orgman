@@ -8,16 +8,8 @@ public class GenderFactory {
     private static final String SUFFIX = Helper.getSuffixFromClassName(GenderFactory.class);
 
 
-    public static Gender buildGender(String genderDescription) {
+    public static Gender buildGender(String genderDescription, String genderID) {
 
-        return new Gender.Builder().genderDescription(genderDescription).build();
-        /**
-         * Your implementation goes here
-         * INSTRUCTIONS
-         * 1. Remove line [//TODO: implement method body ONLY!]
-         * 2. Remove line [throw new UnsupportedOperationException("Not supported yet.");]
-         * 3. Generate random id using SUFFIX (Hint: call generateRandomGivenSuffix method in Helper class)
-         * 4. Build and return an object of Gender
-         */
+        return new Gender.Builder().genderDescription(genderDescription).genderId(genderID).build();
     }
 }
