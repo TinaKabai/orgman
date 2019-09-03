@@ -6,7 +6,7 @@ public class Helper {
 
     public static String generateRandomGivenSuffix(String suffix) {
 
-        return suffix + "-" + UUID.randomUUID().toString();
+        return suffix + " - " + UUID.randomUUID().toString();
     }
 
     public static String getClassName(Class<?>  aClass) {
